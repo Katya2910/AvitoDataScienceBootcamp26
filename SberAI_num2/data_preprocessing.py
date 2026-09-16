@@ -14,3 +14,4 @@ for img_path in image_paths:
     elif len(image.shape) == 3 and image.shape[2] == 3:
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 print(f"Всего найдено PNG файлов: {len(image_paths)}")
+print(f"Успешно обработано: {valid_count}, удалено поврежденных: {deleted_count}")
